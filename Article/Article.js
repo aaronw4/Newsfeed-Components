@@ -142,4 +142,11 @@ function component(articleData) {
   paragraph2.classList.add('paragraph2');
   paragraph3.classList.add('paragraph3');
   button.classList.add('button');
+
+  title.textContent = articleData.title;
+  date.textContent = articleData.date;
+  paragraph1.textContent = articleData.firstParagraph;
+  paragraph2.textContent = articleData.secondParagraph;
+  paragraph3.textContent = articleData.thirdParagraph;
+  
 }
