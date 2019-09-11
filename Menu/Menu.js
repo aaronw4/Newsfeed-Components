@@ -70,6 +70,7 @@ function menuComp(items) {
 
   menuButton.addEventListener('click', (e) => {
     menu.classList.toggle('menu--open');
+    TweenMax.to('.menu', 2, {left:0});
   })
 
   return menu;
