@@ -119,3 +119,27 @@ You will want your component to look like the template below:
   Refresh the page to see the new article.
 
 */
+function component(articleData) {
+  let article = document.createElement('div');
+  let title = document.createElement('h2');
+  let date = document.createElement('p');
+  let paragraph1 = document.createElement('p');
+  let paragraph2 = document.createElement('p');
+  let paragraph3 = document.createElement('p');
+  let button = document.createElement('span');
+
+  article.appendChild(title);
+  article.appendChild(date);
+  article.appendChild(paragraph1);
+  article.appendChild(paragraph2);
+  article.appendChild(paragraph3);
+  article.appendChild(button);
+
+  article.classList.add('article');
+  title.classList.add('title');
+  date.classList.add('date');
+  paragraph1.classList.add('paragraph1');
+  paragraph2.classList.add('paragraph2');
+  paragraph3.classList.add('paragraph3');
+  button.classList.add('button');
+}
