@@ -111,7 +111,7 @@ You will want your component to look like the template below:
 
   Step 3: return the entire component.
 
-  Step 4: Map over the data, creating a component for each oject 
+  Step 4: Map over the data, creating a component for each object 
   and add each component to the DOM as children of the 'articles' div.
 
   Step 5: Add a new article to the array. 
@@ -136,17 +136,29 @@ function component(articleData) {
   article.appendChild(button);
 
   article.classList.add('article');
+  article.classList.add('article-open')
   title.classList.add('title');
   date.classList.add('date');
   paragraph1.classList.add('paragraph1');
   paragraph2.classList.add('paragraph2');
   paragraph3.classList.add('paragraph3');
-  button.classList.add('button');
+  button.classList.add('expandButton');
 
   title.textContent = articleData.title;
   date.textContent = articleData.date;
   paragraph1.textContent = articleData.firstParagraph;
   paragraph2.textContent = articleData.secondParagraph;
   paragraph3.textContent = articleData.thirdParagraph;
-  
+  button.textContent = '\u25BC';
+
+  button.addEventListener('click', (e) => {
+    article.classList.toggle('article-open');
+  })
+
+  return article;
 }
+
+let articles = document.querySelector('.articles');
+data.forEach(info => {
+  articles.appendChild(component(info));
+})
