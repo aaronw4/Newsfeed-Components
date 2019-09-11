@@ -57,6 +57,13 @@ function menuComp(items) {
   ul.appendChild(music);
   ul.appendChild(logOut);
 
+  students.textContent = menuItems[0];
+  faculty.textContent = menuItems[1];
+  whatsNew.textContent = menuItems[2];
+  tech.textContent = menuItems[3];
+  music.textContent = menuItems[4];
+  logOut.textContent = menuItems[5];
+
   menu.classList.add('menu');
   menu.classList.add('menu--open');
 
