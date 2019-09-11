@@ -159,6 +159,8 @@ function component(articleData) {
 
   button.addEventListener('click', (e) => {
     article.classList.toggle('article-open');
+    TweenMax.to('.article-open', 2, {height: 400})
+    article.style.height = '50px';
   })
 
   return article;
