@@ -71,6 +71,7 @@ function menuComp(items) {
   menuButton.addEventListener('click', (e) => {
     menu.classList.toggle('menu--open');
     TweenMax.to('.menu', 2, {left:0});
+    menu.style.left = '-350px';
   })
 
   return menu;
