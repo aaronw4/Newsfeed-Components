@@ -143,7 +143,6 @@ function component(articleData) {
   article.appendChild(button);
 
   article.classList.add('article');
-  article.classList.add('article-open')
   title.classList.add('title');
   date.classList.add('date');
   paragraph1.classList.add('paragraph1');

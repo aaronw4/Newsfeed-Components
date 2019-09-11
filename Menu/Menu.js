@@ -65,7 +65,6 @@ function menuComp(items) {
   logOut.textContent = menuItems[5];
 
   menu.classList.add('menu');
-  menu.classList.add('menu--open');
 
   let menuButton = document.querySelector('.menu-button');
 
